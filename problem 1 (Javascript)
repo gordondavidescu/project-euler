@@ -7,10 +7,13 @@
 Find the sum of all the multiples of 3 or 5 below 1000.</p>
 
 Solution:    
-    <p id="demo"></p>
+    <p id="solutionplacement"></p>
     <script>
         var sum = 0;
         var list = [];
+        
+        /* there is no reason for this array to be here other than if you want to see the full list of numbers that are multiples of three or five. */
+        
         for (i = 0; i < 1000; i++) {
         
             if (i % 3 == 0)
@@ -20,6 +23,8 @@ Solution:
                 i++;
             }
         
+        /* I incremented i here so that it would not count numbers that are multiples of both 3 and 5 twice. */
+        
             if (i % 5 == 0)
             {
                 sum +=i;
@@ -27,7 +32,9 @@ Solution:
             }
         }
         sum-=1000;
-        document.getElementById("demo").innerHTML = sum;
+        /* subtracting 1000 seemed the most straight forward way to take away 1000 from the sum -- otherwise the sum is too big as the problem explicitly wants multiples under but not including 1000. Strangely, setting the upper limit to 999 seems to exclude it for some reason.*/
+        
+        document.getElementById("solutionplacement").innerHTML = sum;
         
         
     </script>
