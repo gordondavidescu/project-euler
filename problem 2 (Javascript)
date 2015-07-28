@@ -9,7 +9,7 @@
 <p>By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.</p>
 
 Solution:    
-    <p id="demo"></p>
+    <p id="solutionlocation"></p>
     <script>
         var num1 = 1;
         var num2 = 2;
@@ -30,7 +30,7 @@ Solution:
             
         }
         
-        document.getElementById("demo").innerHTML = sum;
+        document.getElementById("solutionlocation").innerHTML = sum;
         
         
     </script>
