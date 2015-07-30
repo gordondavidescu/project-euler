@@ -3,6 +3,9 @@
 </p>
 
 <script>
+
+//This tests to see if any given number is prime //
+
 function isPrime(value) {
     for(var i = 2; i < value; i++) {
         if(value % i === 0) {
@@ -12,6 +15,7 @@ function isPrime(value) {
     return value > 1;
 }
 
+// this goes through every number in a series and finds the biggest prime number //
 
 function biggestPrime(){
     var biggest = 1;
