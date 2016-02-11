@@ -19,10 +19,11 @@ function isPrime(value) {
 
 function biggestPrime(){
     var biggest = 1;
-    for(var i = 600851470000; i < 600851475143; i++){
+    for(var i = 600851475143; i > 600800000000; i--){
     if (isPrime(i) != false)
       {
       biggest = i;
+      break;
       }
      document.getElementById("demo").innerHTML = biggest;
     }
